@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <form action="">
+    <label for="">Name:</label>
+    <input type="text" name="userName" >
+    <br>
+    <br>
+<!-- here "name attribue" is given so that when you submit, no confusion occur that which value is for which field to be stored in backend database -->
+    <label for="">Father's Name:</label>
+    <input type="text" name="userFname">
+    <br><br>
+
+    <label for="">Age:</label>
+    <input type="number" name="Age">
+    <br>
+    <br>
+
+    <label for="">Password:</label>
+    <input type="password" name="userPassword">
+    <br>
+    <br>
+
+    <!-- "for" and "id" is common so that when we click the radio button or the label, both will be functional -->
+    <label for="male">Male</label>
+    <input type="radio" name="gender" id="male" value="male">
+    <label for="female">Female</label>
+    <input type="radio" name="gender" id="female" value="female">
+    <label for="other">other</label>
+    <input type="radio" name="gender" id="other" value="other">
+    <!-- here "value attribute" is given bcz without it the data sent on backend will be "gender = on" not "male or female" . so to replace value we provide "value attribute" -->
+    <br><br>
+
+    <label for="c++">c++</label>
+    <input type="checkbox" name="subject" id="c++" value="c++">
+
+    <label for="Python">Python</label>
+    <input type="checkbox" name="subject" id="Python" value="Python">
+
+    <label for="Java">Java</label>
+    <input type="checkbox" name="subject" id="Java" value="Java">
+    <br><br>
+
+    <input type="Submit">
+
+  </form>
+
+</body>
+</html>
+
+<!-- http://127.0.0.1:5500/Day%204/index.html?userName=Ashok+Murmu&userFname=Dinesh+Manjhi&Age=28&userPassword=Murmu -->
+
+
+<!-- http://127.0.0.1:5500/Day%204/index.html?userName=Ashok+Murmu&userFname=Dinesh+Manjhi&Age=26&userPassword=12345&gender=on -->
+
+<!-- http://127.0.0.1:5500/Day%204/index.html?userName=Ashok+Murmu&userFname=Dinesh+Manjhi&Age=26&userPassword=12345&gender=male -->
