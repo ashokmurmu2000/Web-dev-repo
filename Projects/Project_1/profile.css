@@ -332,6 +332,17 @@ nav a{
   border-radius: 5px;
   font-size: 0.75rem;
   margin-right: 5px;
-  
-  
+
+}
+
+@media screen and (max-width: 1200px) {
+  .main-container{
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .sidebar{
+    position: static;
+    height: auto;
+  }
 }
